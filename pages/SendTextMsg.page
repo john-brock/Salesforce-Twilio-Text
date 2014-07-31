@@ -1,0 +1,13 @@
+<apex:page controller="SendTextMessageController">
+  <apex:form >
+      <apex:pageBlock title="Send a Text Message">
+          <apex:pageBlockButtons >
+              <apex:commandButton action="{!send}" value="Send"/>
+          </apex:pageBlockButtons>
+          <apex:pageBlockSection columns="1">
+              <apex:inputText value="{!toNumber}" label="To Number"/>
+              <apex:inputTextarea value="{!message}" label="Message"/>
+          </apex:pageBlockSection>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>
