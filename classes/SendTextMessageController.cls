@@ -45,8 +45,6 @@ public class SendTextMessageController {
         protected String to;
         protected String message;
         protected String fromNumber;
-        protected String accountSid;
-        protected String token;
 
         public SmsMessage(String to, String fromNumber, String message) {
             this.to = fixPhoneNumber(to);
